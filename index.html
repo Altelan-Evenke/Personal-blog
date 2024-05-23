@@ -35,7 +35,22 @@
         }
         
         <!-- 下面是图片指定大小居中 -->
-
+        .image-container {
+            width: 100%; /* 容器宽度为100% */
+            text-align: center; /* 文字居中 */
+            display: flex; /* 使用Flexbox布局 */
+            justify-content: center; /* 水平居中 */
+            height: 300px; /* 容器高度，可以根据需要调整 */
+            overflow: hidden; /* 超出容器的图片部分隐藏 */
+        }
+ 
+        .image-container img {
+            max-width: 100%; /* 图片宽度不超过容器宽度 */
+            max-height: 100%; /* 图片高度不超过容器高度 */
+            width: auto; /* 宽度自适应 */
+            height: auto; /* 高度自适应 */
+            position: relative; /* 相对定位 */
+        }
 
         <!-- 下面是创建按钮大小颜色控制的 -->
         .button {
@@ -55,8 +70,10 @@
 </head>
     
 <body>
-    
-    <img src="images/touxiangtupian.png" alt="Altelan Evenke's 博客头像">
+
+    <div class="image-container">
+        <img src="images/touxiangtupian.png" alt="Altelan Evenke's 博客头像">
+    </div>
     
     <h3>博客</h3>
     <h3>指南</h3>
