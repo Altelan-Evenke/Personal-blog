@@ -34,20 +34,19 @@
             text-align: center;
         }
         
-        <!-- 下面是图片剧中圆形 -->
+        <!-- 下面是图片指定大小居中 -->
         .image-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 12px;
-            overflow: hidden;
-            }
- 
-        .image-container img {
-            max-width: 100%;
-            max-height: 100%;
-            width: auto;
-            height: auto;
+            height: 24px; /* 指定容器的高度 */
+        }
+        .responsive-img {
+            max-width: 100%; /* 图片最大宽度为容器宽度 */
+            height: auto; /* 高度自动缩放以保持宽高比 */
+            width: auto; /* 宽度自动缩放以保持宽高比 */
+            max-height: 150px; /* 图片最大高度，可根据需要调整 */
+            display: block; /* 避免图片下方出现空隙 */
         }
 
         <!-- 下面是创建按钮大小颜色控制的 -->
@@ -59,7 +58,7 @@
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 36px; /* 字体大小 */
+            font-size: 200px; /* 字体大小 */
             margin: 4px 2px;
         }
         .button1 {border-radius: 2px;} /* 圆角角度 */
