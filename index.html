@@ -44,11 +44,27 @@
             width: 100%; /* 图片宽度为容器宽度 */
             height: auto; /* 图片高度自动调整 */
         }
-
-        <!-- 下面是创建按钮大小颜色控制的 -->
-
-        
-    </style>      
+   
+    </style>   
+    
+    <!-- 下面是创建按钮大小颜色控制的 -->
+    <style>
+        .custom-size-button {
+            width: 200px;  /* 自定义按钮宽度 */
+            height: 50px;  /* 自定义按钮高度 */
+            background-color: #4CAF50; /* 按钮背景颜色 */
+            color: white; /* 按钮文本颜色 */
+            padding: 10px 20px; /* 按钮内部填充 */
+            border: none; /* 无边框 */
+            border-radius: 5px; /* 圆角边框 */
+            cursor: pointer; /* 鼠标悬停时显示指针 */
+        }
+ 
+        .custom-size-button:hover {
+            background-color: #45a049; /* 鼠标悬停时按钮颜色变化 */
+        }
+    </style>
+    
 </head>
     
 <body>
@@ -60,8 +76,8 @@
     <h3>博客</h3>
     <h3>指南</h3>
     <h3>记录及评价</h3>
-
-    <a href="HTM默认生成完全格式.html" class="button"><h3>博客</h3></a>
+    
+    <a href="HTM默认生成完全格式.html" class="custom-size-button"><h3>博客</h3></a>
 
     <!-- 给页面添加底部版权信息 -->
     <div id="footer"> Copyright © 2024 Altelan Evenke 版权所有 </div>  
