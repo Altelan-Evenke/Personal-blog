@@ -1,6 +1,6 @@
-> 关于Markdown的一些语法知识收藏<br>
-1. https://blog.csdn.net/Yoocii/article/details/80019637
-2. https://www.imooc.com/wiki/markdownlesson/markdowncomment.html
+> 关于Markdown的一些语法知识收藏
+> 1. https://blog.csdn.net/Yoocii/article/details/80019637
+> 2. https://www.imooc.com/wiki/markdownlesson/markdowncomment.html
 ---
 # 我的博客开发大事件
 * 2024-5-23 建站
