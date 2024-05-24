@@ -5,9 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Altelan Evenke's 指南</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        function loadMarkdownFile() {
+            fetch('guide/Markdown的基础知识.md')
+                .then(response => response.text())
+                .then(markdown => {
+                    const html = marked(markdown);
+                    document.getElementById('Markdown的基础知识').innerHTML = html;
+                });
+        }
+    </script>
+    
 </head>
-<body> 
+<body onload="loadMarkdownFile()"> 
     1.关于 Markdown
-    <a href="guide/Markdown的基础知识.md">1. Markdown的基础知识</a>
+    <div id="Markdown的基础知识"></div>
+    <!-- <a href="guide/Markdown的基础知识.md">1. Markdown的基础知识</a> -->
 </body>
 </html>
